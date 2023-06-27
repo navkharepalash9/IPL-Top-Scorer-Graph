@@ -1,0 +1,36 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+X1=[0,616,572,618,608,733,733,660,562,973,641,735,692,670,635,863]
+plt.plot(X1,marker='o',markeredgecolor='black',markerfacecolor='red',color='green',linewidth=3)
+plt.ylim(0,1200)
+plt.xlim(0,17)
+plt.xlabel('YEARS',labelpad=10,color='green',fontsize=15)
+plt.ylabel('RUNS',color='green',fontsize=15)
+num=np.arange(1,16)
+year=np.arange(2008,2024)
+plt.xticks(np.arange(1,16),np.arange(2008,2023))
+plt.minorticks_on()
+plt.grid()
+plt.title("Top Run Scorer In IPL Each Session",pad=10)
+c='purple'
+plt.annotate(' 616 Runs \n S Marsh ',(1,636),fontsize=8,color=c)
+plt.annotate(' 572 Runs \n M Hayden ',(2,500),fontsize=8,color=c)
+plt.annotate(' 618 Runs \nS Tendulkar ',(3,648),fontsize=8,color=c)
+plt.annotate(' 608 Runs \n C Gayle ',(4,538),fontsize=8,color=c)
+plt.annotate(' 733 Runs \n C Gayle',(5,753),fontsize=8,color=c)
+plt.annotate(' 733 Runs \n M Hussey',(6,743),fontsize=8,color=c)
+plt.annotate(' 660 Runs \n R Uthappa',(7,670),fontsize=8,color=c)
+plt.annotate(' 562 Runs \n  Warner',(8,490),fontsize=8,color=c)
+plt.annotate(' 973 Runs \n V Kohli',(9,973),fontsize=8,color=c)
+plt.annotate(' 641 Runs \n D Warner',(10,570),fontsize=8,color=c)
+plt.annotate(' 735 Runs \n  Williamson \n',(11,705),fontsize=8,color=c)
+plt.annotate(' 692 Runs \n D Warner',(12,602),fontsize=8,color=c)
+plt.annotate(' 670 Runs \n KL Rahul',(13,690),fontsize=8,color=c)
+plt.annotate(' 635 Runs \n R Gaikwad',(14,570),fontsize=8,color=c)
+plt.annotate(' 863 Runs \n  J Buttler',(15,863),fontsize=8,color=c)
+
+plt.show()
+# print(runs)
+print(num)
+print(year)
